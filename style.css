@@ -1,0 +1,121 @@
+html{
+    background-color: rgb(245, 245, 245);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chatbot{
+    height: 600px;
+    width: 400px;
+    background-color: rgb(227, 232, 238);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    /* border: solid;
+    border-color: black; */
+}
+
+.chat-header{
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    color:rgb(255, 253, 249);
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px 20px 0 0;
+}
+
+.chat-body{
+    height: 480px;
+    color:rgb(54, 54, 54);
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.chat-footer{
+    /* text-align: center; */
+    background-color: rgb(255, 255, 255);
+    color:rgb(42, 42, 42);
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0 0 20px 20px;
+}
+
+.send-mess-btn img{
+    width: 30px;
+}
+
+ .send-mess-btn{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.chatbox .chat{
+    display: flex;
+}
+
+.chatbox .chat p{
+    padding: 12px 16px;
+    background: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0 5px;
+    max-width: 75%;
+    font-size: 1rem;
+}
+
+.chatbox .incom p{
+    background: rgb(255, 255, 255);
+    color: rgb(42, 42, 42);
+    border-radius: 5px 5px 5px 0;
+}
+
+.chatbot .outgo{
+    justify-content: flex-end;
+    margin: 1px 50px 10px 10px;
+}
+
+.chatbot .chat-footer{
+    border-top: 1px solid rgb(124, 124, 124);
+}
+
+.chat-footer textarea{
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    width: 320px;
+    height: 60px;
+    padding: 20px 15px 16px 0;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chat-footer textarea:valid ~ button{
+    visibility: visible;
+}
+
+.send-mess-btn{
+    position: absolute;
+    align-self: flex-end;
+    cursor: pointer;
+    height: 60px;
+    visibility: hidden;
+}
+
+@media(max-width:490px){
+    .chatbot{
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .chat-footer{
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .chatbot .chatbox{
+        height: 90%;
+    }
+    
+}

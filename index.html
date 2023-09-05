@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чатбот</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="chatbot">
+        <div class="chat-header">
+            <h1>Чатбот</h1>
+        </div>
+        <div class="chat-body">
+            <ul class="chatbox">
+                <li class="chat incom">
+                    <p>Привет! Напиши мне, а я повторю за тобой.</p>
+                </li>
+                <li class="chat outgo">
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="chat-footer">
+            <textarea id="textmess" placeholder="Введите текст..." required></textarea>
+            <button id="send-mess" class="send-mess-btn" onClick="deleteMess()">
+                <img src="https://cdn-icons-png.flaticon.com/512/10426/10426419.png" alt="">
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
